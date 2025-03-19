@@ -1,4 +1,7 @@
-body {
+:root {
+  --primary-1: #495e57;
+  --primary-2: #f4ce14;
+  --light: #edefee;
 }
 
 .container {
@@ -18,13 +21,41 @@ body {
   align-items: center;
 }
 
-.site-header-menu {
-  list-style: none;
-  display: flex;
+.site-header .main-nav {
   gap: 20px;
 }
 
-.site-header-menu a {
+.main-nav {
+  list-style: none;
+  display: flex;
+}
+
+.main-nav a {
   text-decoration: none;
   color: #000;
+}
+
+.site-footer {
+  padding: 36px 0;
+  background-color: var(--light);
+}
+.site-footer__container {
+  width: 100%;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.site-footer .main-nav {
+  flex-direction: column;
+}
+
+.site-footer .main-nav a {
+  display: inline-block;
+  padding: 2px 0;
+}
+
+.hero {
+  background-color: var(--primary-1);
+  color: white;
+  padding: 100px 0;
 }
