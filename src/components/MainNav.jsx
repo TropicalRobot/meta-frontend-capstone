@@ -1,5 +1,5 @@
 import Nav from "./Nav";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 export default function MainNav() {
   return (
